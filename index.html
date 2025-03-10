@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="img/icon.png">
+
+    <title>Barber</title>
+</head>
+<body>
+    
+    <!--Modal-->
+    <div class="overlay">
+        <form class="form-agendar container p-4">
+
+            <div class="row">
+
+                <!--Nome completo-->
+                <div class="col-12">
+                    <label for="inputName" class="fw-bold">NOME COMPLETO</label>
+                    <input type="text" class="input" id="inputName" required>
+                </div>
+
+                <!--Telefone-->
+                <div class="col-6 mt-4">
+                    <label for="inputTelefone" class="fw-bold">TELEFONE</label>
+                    <input type="tel" class="input" id="inputTelefone" required>
+                </div>
+
+                <!--E-Mail-->
+                <div class="col-6 mt-4">
+                    <label for="inputEmail" class="fw-bold">E-MAIL</label>
+                    <input type="email" class="input" id="inputEmail" required>
+                </div>
+
+                <!--Barbeiro desejado-->
+                <div class="col-12 mt-4">
+                    <label for="inputBarbeiro" class="fw-bold">Barbeiro</label>
+                    <select class="form-control" name="inputBarbeiro" id="inputBarbeiro" required>
+                        <option value="" disabled selected>Escolha um barbeiro</option>
+                        <option value="b1">MARLON MCDONALD</option>
+                        <option value="b2">JERRY BANKS</option>
+                        <option value="b3">JACK STONES</option>
+                    </select>
+                </div>
+
+                <!--Data-->
+                <div class="col-6 mt-4">
+                    <label for="inputDate" class="fw-bold">DATA</label>
+                    <input type="date" class="form-control" id="inputDate" required>
+                </div>
+
+                <!--Horário desejado-->
+                <div class="col-6 mt-4">
+                    <label for="inputHorario" class="fw-bold">HORÁRIO</label>
+                    <select class="form-control" name="inputHorario" id="inputHorario" required>
+                        <option value="" disabled selected>Escolha um horário</option>
+                        <option value="op1">9:00</option>
+                        <option value="op2">10:00</option>
+                        <option value="op3">11:00</option>
+                        <option value="op4">12:00</option>
+                        <option value="op5">13:00</option>
+                        <option value="op6">14:00</option>
+                        <option value="op7">15:00</option>
+                        <option value="op8">16:00</option>
+                        <option value="op9">17:00</option>
+                        <option value="op10">18:00</option>
+                        <option value="op11">19:00</option>
+                        <option value="op12">20:00</option>
+                    </select>
+                </div>
+
+                <!--Marque os serviços desejados-->
+                <div class="col-12 border-input mt-2 mb-4 p-3">
+                    <label for="" class="fw-bold mb-2">MARQUE OS SERVIÇOS DESEJADOS</label><br>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="idcheck1" name="idcheck" value="Check 1">
+                        <label class="form-check-label" for="idcheck1">Cabelo</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="idcheck2" name="idcheck" value="Check 2">
+                        <label class="form-check-label" for="idcheck2">Barba</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="idcheck3" name="idcheck" value="Check 3">
+                        <label class="form-check-label" for="idcheck3">Sobrancelhas</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="idcheck4" name="idcheck" value="Check 4">
+                        <label class="form-check-label" for="idcheck4">Limpeza de pele</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="idcheck5" name="idcheck" value="Check 5">
+                        <label class="form-check-label" for="idcheck5">Hidratação capilar</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="idcheck6" name="idcheck" value="Check 6">
+                        <label class="form-check-label" for="idcheck6">Atendimento VIP</label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn-modal fw-bold mx-auto d-block">AGENDAR HORÁRIO</button>
+
+        </form>
+    </div>
+
+    <header class="d-flex flex-column justify-content-center align-items-center">
+
+        <!--IMG DE FUNDO-->
+        <div class="img-header">
+
+            <!--BOTÕES-->
+            <nav
+                class="d-flex flex-column flex-md-row gap-4 justify-content-center w-100 align-items-center nav-buttons">
+                <a href="#servicos" class="link">
+                    <button class=" btn-nav">NOSSOS SERVIÇOS</button>
+                </a>
+                <a href="#barbeiros" class="link">
+                    <button class=" btn-nav">NOSSOS BARBEIROS</button>
+                </a>
+                </button>
+            </nav>
+
+        </div>
+
+        <!--CARD DE INFORMAÇÕES-->
+        <div class="card-info d-flex text-center justify-content-center gap-4 align-items-center">
+
+            <!--CARD 1-->
+            <div style="width: 240px;">
+                <i class="bi bi-geo-alt-fill mt-3" style="font-size: 40px;"></i>
+                <p class="fw-bold fs-4 mb-1">ENDEREÇO</p>
+                <div class="linha container mb-3"></div>
+                <p>Vale do Silício, CA, EUA</p>
+            </div>
+
+            <!--CARD 2-->
+            <div style="width: 240px;">
+                <i class="bi bi-telephone-fill mt-3" style="font-size: 40px;"></i>
+                <p class="fw-bold fs-4 mb-1">TELEFONE</p>
+                <div class="linha container mb-3"></div>
+                <p>+55 90000-0000<br>+55 90000-0000</p>
+            </div>
+
+            <!--CARD 3-->
+            <div style="width: 240px;">
+                <i class="bi bi-clock-fill mt-3" style="font-size: 40px;"></i>
+                <p class="fw-bold fs-4 mb-1">HORÁRIO</p>
+                <div class="linha container mb-3"></div>
+                <p><b>Seg à Sáb:</b> 9h às 20h<br> <b>Dom:</b> 9h às 18h</p>
+            </div>
+
+        </div>
+    </header>
+
+    <!--NOSSOS SERVIÇOS-->
+    <main id="servicos" class="container servicos p-2 mb-4">
+        <h1 class="text-bege text-center mb-4" style="font-size: 60px;">NOSSOS SERVIÇOS</h1>
+
+        <div class="row gap-5 justify-content-center">
+
+            <!--Item 1-->
+            <div class="card-servico d-flex flex-column align-items-center">
+                <p class="fw-bold fs-4 mt-4">CABELO</p>
+                <img class="photo-servico mt-1" src="img/barba.png" alt="Corte de Cabelo">
+                <p class="text-center mt-4" style="width: 250px;">Corte de cabelo de acordo com o estilo preferido do
+                    cliente. Pode incluir tesoura ou máquina.</p>
+                <p class="fw-bold fs-4">R$35,00</p>
+            </div>
+
+            <!--Item 2-->
+            <div class="card-servico d-flex flex-column align-items-center">
+                <p class="fw-bold fs-4 mt-4">BARBA</p>
+                <img class="photo-servico mt-1" src="img/barba.png" alt="Aparamento da barba">
+                <p class="text-center mt-4" style="width: 250px;">Aparação e modelagem da barba com lâmina, incluindo
+                    toalhas quentes e cuidados com a pele.</p>
+                <p class="fw-bold fs-4">R$40,00</p>
+            </div>
+
+            <!--Item 3-->
+            <div class="card-servico d-flex flex-column align-items-center">
+                <p class="fw-bold fs-4 mt-4">SOBRANCELHAS</p>
+                <img class="photo-servico mt-1" src="img/barba.png" alt="Alinhamento das sobrancelhas">
+                <p class="text-center mt-4" style="width: 250px;">Design de sobrancelhas para homens, com ou sem uso de
+                    pinça, navalha ou cera.</p>
+                <p class="fw-bold fs-4">R$15,00</p>
+            </div>
+
+            <!--Item 4-->
+            <div class="card-servico d-flex flex-column align-items-center">
+                <p class="fw-bold fs-4 mt-4">LIMPEZA DE PELE</p>
+                <img class="photo-servico mt-1" src="img/barba.png" alt="Limpeza de pele">
+                <p class="text-center mt-4" style="width: 250px;">Limpeza profunda da pele, removendo impurezas e
+                    cravos, com esfoliação e hidratação.</p>
+                <p class="fw-bold fs-4">R$50,00</p>
+            </div>
+
+            <!--Item 5-->
+            <div class="card-servico d-flex flex-column align-items-center">
+                <p class="fw-bold fs-4 mt-4">HIDRATAÇÃO CAPILAR</p>
+                <img class="photo-servico mt-1" src="img/barba.png" alt="Hidratação capilar">
+                <p class="text-center mt-4" style="width: 250px;">Lavar o cabelo com shampoo específico e fazer
+                    hidratação para garantir fios saudáveis e bonitos.</p>
+                <p class="fw-bold fs-4">R$25,00</p>
+            </div>
+
+            <!--Item 6-->
+            <div class="card-servico d-flex flex-column align-items-center">
+                <p class="fw-bold fs-4 mt-4">ATENDIMENTO VIP</p>
+                <img class="photo-servico mt-1" src="img/barba.png" alt="Atendimento VIP">
+                <p class="text-center mt-4" style="width: 250px;">Pacote que inclui corte de cabelo, barba,
+                    sobrancelhas, limpeza de pele e até hidratração capilar.</p>
+                <p class="fw-bold fs-4">R$150,00</p>
+            </div>
+        </div>
+    </main>
+
+    <!--IMG-1 DA BARBEARIA-->
+    <section>
+        <div class="img-barbearia-1"></div>
+    </section>
+
+    <!--NOSSOS BARBEIROS-->
+    <section id="barbeiros" class="p-4 mt-3 mb-4">
+        <h1 class="text-bege text-center mb-4" style="font-size: 60px;">NOSSOS BARBEIROS</h1>
+
+        <div class="row gap-5 justify-content-center">
+
+            <!--Barbeiro 1-->
+            <div class="card-barbeiro bg-dark d-flex flex-column align-items-center">
+                <img class="photo-barbeiro" src="img/barbeiro-1.png" alt="Barbeiro Marlon">
+                <p class="text-light fs-4 fw-bold text-center mt-3">MARLON MCDONALD</p>
+                <div class="fs-5 d-flex gap-4 justify-content-center">
+                    <a class="text-decoration-none" href="#">
+                        <i class="bi bi-facebook text-yellow"></i>
+                    </a>
+                    <a class="text-decoration-none" href="#">
+                        <i class="bi bi-twitter text-yellow"></i>
+                    </a>
+                    <a class="text-decoration-none" href="#">
+                        <i class="bi bi-instagram text-yellow"></i>
+                    </a>
+                </div>
+                <button class="btn-agendar mt-3" data-barbeiro="MARLON MCDONALD">AGENDAR</button>
+            </div>
+
+            <!--Barbeiro 2-->
+            <div class="card-barbeiro bg-dark d-flex flex-column align-items-center">
+                <img class="photo-barbeiro" src="img/barbeiro-2.png" alt="Barbeiro Jerry">
+                <p class="text-light fs-4 fw-bold text-center mt-3">JERRY BANKS</p>
+                <div class="fs-5 d-flex gap-4 justify-content-center">
+                    <a class="text-decoration-none" href="#">
+                        <i class="bi bi-facebook text-yellow"></i>
+                    </a>
+                    <a class="text-decoration-none" href="#">
+                        <i class="bi bi-twitter text-yellow"></i>
+                    </a>
+                    <a class="text-decoration-none" href="#">
+                        <i class="bi bi-instagram text-yellow"></i>
+                    </a>
+                </div>
+                <button class="btn-agendar mt-3" data-barbeiro="JERRY BANKS">AGENDAR</button>
+            </div>
+
+            <!--Barbeiro 3-->
+            <div class="card-barbeiro bg-dark d-flex flex-column align-items-center">
+                <img class="photo-barbeiro" src="img/barbeiro-3.png" alt="Barbeiro Jack">
+                <p class="text-light fs-4 fw-bold text-center mt-3">JACK STONES</p>
+                <div class="fs-5 d-flex gap-4 justify-content-center">
+                    <a class="text-decoration-none" href="#">
+                        <i class="bi bi-facebook text-yellow"></i>
+                    </a>
+                    <a class="text-decoration-none" href="#">
+                        <i class="bi bi-twitter text-yellow"></i>
+                    </a>
+                    <a class="text-decoration-none" href="#">
+                        <i class="bi bi-instagram text-yellow"></i>
+                    </a>
+                </div>
+                <button class="btn-agendar mt-3" data-barbeiro="JACK STONES">AGENDAR</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!--IMG-2 DA BARBEARIA-->
+    <section>
+        <div class="img-barbearia-2"></div>
+    </section>
+
+    <!--MAPA-->
+    <section class="bg-dark d-flex align-items-center" style="height: 300px;">
+        <div class="container" style="width: 75%; height: 200px;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202845.20096153519!2d-122.20590704764068!3d37.40268917638253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb68ad0cfc739%3A0x7eb356b66bd4b50e!2sVale%20do%20Sil%C3%ADcio%2C%20CA%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1741554336019!5m2!1spt-BR!2sbr"
+                class="rounded-2" style="width: 100%; height: 100%;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="bg-dark d-flex flex-column justify-content-center align-items-center">
+        <div class="fs-4 d-flex gap-4">
+            <a class="text-decoration-none" href="#">
+                <i class="bi bi-facebook text-light"></i>
+            </a>
+            <a class="text-decoration-none" href="#">
+                <i class="bi bi-twitter text-light"></i>
+            </a>
+            <a class="text-decoration-none" href="#">
+                <i class="bi bi-instagram text-light"></i>
+            </a>
+            <a class="text-decoration-none" href="#">
+                <i class="bi bi-whatsapp text-light"></i>
+            </a>
+            <a class="text-decoration-none" href="#">
+                <i class="bi bi-envelope text-light"></i>
+            </a>
+        </div>
+        <div class="text-light mb-3">
+            <p>© Copyright 2025 - Barber</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

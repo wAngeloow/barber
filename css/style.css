@@ -1,0 +1,228 @@
+/*Modal*/
+.overlay {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.559);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.form-agendar {
+    background-color: white;
+    width: 600px;
+    height: auto;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+input,
+.border-input {
+    border: none;
+    border-bottom: 3px solid black;
+}
+
+input:focus {
+    outline: none;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.btn-modal {
+    border: none;
+    display: flex;
+    width: 300px;
+    padding: 20px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: var(--Dark-Vanilla, #DEC7A6);
+
+}
+
+/*Header*/
+.img-header {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/img-header.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.btn-nav {
+    background-color: #DEC7A6;
+    font-weight: bold;
+    border: none;
+    padding: 20px 30px;
+    width: 230px;
+}
+
+.nav-buttons {
+    position: absolute;
+    bottom: 150px;
+}
+
+.card-info {
+    width: 290px;
+    height: 690px;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.51);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 390px;
+}
+
+.linha {
+    width: 80px;
+    height: 5px;
+    background-color: #DEC7A6;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+/*Serviços*/
+.servicos {
+    margin-top: 600px;
+}
+
+.text-bege {
+    color: #DEC7A6;
+}
+
+.card-servico {
+    width: 320px;
+    height: 500px;
+    border-radius: 3px;
+    border: 3px solid #000;
+    background: #FFF;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.51);
+    transition: ease-in-out 0.5s;
+}
+
+.card-servico:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
+}
+
+.photo-servico {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/*Img-1 Barbearia*/
+.img-barbearia-1 {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/img-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/*Img-2 Barbearia*/
+.img-barbearia-2 {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/img-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/*Barbeiros*/
+.card-barbeiro {
+    width: 350px;
+    height: 520px;
+}
+
+.photo-barbeiro {
+    width: 350px;
+    height: 340px;
+    object-fit: cover;
+    background-color: #E9C664;
+}
+
+.text-yellow {
+    color: #E9C664;
+}
+
+.btn-agendar {
+    display: flex;
+    width: 156px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid #E9C664;
+    background-color: #212529;
+    color: #E9C664;
+    transition: ease-in-out 0.3s;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.btn-agendar:hover {
+    border: 2px solid #198754;
+    color: #198754;
+    transition: ease-in-out 0.3s;
+}
+
+/*Mobile*/
+@media screen and (min-width: 1000px) {
+
+    /*Header*/
+    .img-header {
+        background-position: initial;
+    }
+
+    .nav-buttons {
+        position: absolute;
+        bottom: 150px;
+    }
+
+    .card-info {
+        width: 1000px;
+        height: 240px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /*Serviços*/
+    .servicos {
+        margin-top: 150px;
+    }
+
+    /*Barbeiros*/
+    .card-barbeiro {
+        width: 410px;
+        height: 520px;
+    }
+
+    .photo-barbeiro {
+        width: 410px;
+        height: 340px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form-agendar {
+        width: 400px;
+    }
+}
